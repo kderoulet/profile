@@ -1,14 +1,5 @@
 $(function() {    
 
-    // var sizeTheOverlays = function() {
-    //     $(".overlay").resize().each(function() {
-    //     var h = $(this).parent().outerHeight();
-    //     var w = $(this).parent().outerWidth();
-    //     $(this).css("height", h);
-    //     $(this).css("width", w);
-    //   });
-    // };
-
     var sizeTheOverlays = function() {
         $(".overlay").resize().each(function() {
         let h = $(".portfolio-image").outerHeight();
