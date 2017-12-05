@@ -1,23 +1,35 @@
 body {
     font-family: "Varela Round", sans-serif;
-    background-color: #f3f5f8;
-    color: rgb(51, 51, 51);
+    background-color: #f2f5f8;
+    color: #f2f5f8;
 }
 
 i {
     font-size: 5em;
-    color: #212121;
 }
 
+a {
+    color: #647FA8;
+}
 
-.portfolio-image {
-    border-radius: 3%;
+a:hover {
+    color: #062148;
 }
 
 .profile-image {
     width: 175px;
     border-radius: 50%;
-    margin: 40px;
+    margin: 20px 0 20px 0;
+}
+
+.about {
+    text-align: left;
+    margin: 20px;
+}
+
+
+.portfolio-image {
+    border-radius: 3%;
 }
 
 .overlay {  
@@ -28,7 +40,6 @@ i {
     z-index: 2;
     opacity: 0;
     background-color: rgba(40, 75, 125, 1);
-    color: #f2f5f8;
     transition: opacity 200ms ease-in-out;
     border-radius: 3%;
   }
@@ -37,16 +48,41 @@ i {
       opacity: 1;
     }
 
-.white-link {
-    color: #f3f5f8;
+.link {
+    color: #062148;
 }
 
+.project {
+    margin: 10px;
+    text-align: center;
+}
 
 #sidebar {
     margin-left: 0;
     background-image: 
         linear-gradient(rgba(40, 75, 125, 0.8), rgba(40, 75, 125, 0.8)), 
         url("images/sideimage.jpg");
-    max-width: 415px;
-    color: #f3f5f8;
+    text-align: center;
+    min-width: 280px;
+}
+
+
+@media only screen and (min-width: 576px) {
+    .about {
+        max-width: 200px;
+        margin: 0;
+    }
+    .fixed {
+        position: fixed;
+        left: 0;
+        max-width: 280px;
+        margin: 20px;
+    }
+    .profile-image {
+        margin: 0 20px 20px 20px;
+    }
+    #sidebar {
+        max-width: 280px;
+        text-align: left;
+    }
 }
