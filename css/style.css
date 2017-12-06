@@ -15,10 +15,13 @@ a:hover {
     color: #062148;
 }
 
-.profile-image {
-    width: 175px;
-    border-radius: 50%;
-    margin: 20px 0 20px 0;
+footer {
+    margin-bottom: 0;
+    text-align: center;
+    background-image: 
+    /* linear-gradient(rgba(40, 75, 125, 0.9), rgba(40, 75, 125, 0.9)),  */
+    linear-gradient(rgba(65, 68, 74, 0.92), rgba(65, 68, 74, 0.92)),
+    url("images/devicons.png");
 }
 
 .about {
@@ -27,8 +30,9 @@ a:hover {
     font-size: 14px;
 }
 
-.portfolio-image {
-    border-radius: 3%;
+.contact {
+    text-align: left;
+    font-size: 14px;
 }
 
 .overlay {  
@@ -38,9 +42,9 @@ a:hover {
     position: absolute;
     z-index: 2;
     opacity: 0;
-    background-color: rgb(40, 75, 125);
+    /* background-color: rgb(40, 75, 125); */
+    background-color: rgba(65, 68, 74, 0.95);
     transition: opacity 200ms ease-in-out;
-    border-radius: 3%;
   }
   
 .overlay:hover {
@@ -60,22 +64,59 @@ a:hover {
     margin: 0 100px
 }
 
+.profile-image {
+    width: 175px;
+    border-radius: 50%;
+    margin: 20px 0 20px 0;
+}
+
 .project {
     margin: 10px;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.title {
+    color: rgb(65, 68, 74);
+    font-size: 40px;
     text-align: center;
 }
 /* 65, 68, 74 */
+/* 40, 75, 125 */
 #sidebar {
     margin-left: 0;
-    background-image: 
-        linear-gradient(rgba(40, 75, 125, 0.9), rgba(40, 75, 125, 0.9)), 
-        url("images/devicons.png");
+    background-color: rgb(65, 68, 74)
+    ;
+    /* color: #5976A2; */
+    /* background-image: 
+        linear-gradient(rgba(40, 75, 125, 0.9), rgba(40, 75, 125, 0.9)),
+        linear-gradient(rgba(65, 68, 74, 0.92), rgba(65, 68, 74, 0.92)),
+        url("images/devicons.png"); */
     text-align: center;
     min-width: 280px;
 }
 
+/* 
+  #5976A2
+  #819CA7
+  #38383A
+  #2E2F33
+
+  complements:
+  #22333B
+  #F2F4F3
+
+  C5D5EA
+  B3C5D7
+  D8E1E9
+  */
+
 
 @media only screen and (min-width: 576px) {
+    footer {
+        visibility: hidden;
+        margin: -2000px;
+    }
     .about {
         max-width: 200px;
         margin: 0;
