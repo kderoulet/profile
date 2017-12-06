@@ -1,6 +1,6 @@
 body {
-    background-color: #f2f5f8;
-    color: #f2f5f8;
+    background: linear-gradient(#717171 1px, #212121 110px);
+    color: #919191;
 }
 
 i {
@@ -8,25 +8,19 @@ i {
 }
 
 a {
-    color: #062148;
+    color: #919191;
 }
 
 a:hover {
-    color: #062148;
-}
-
-footer {
-    margin-bottom: 0;
-    text-align: center;
-    background-image: 
-    /* linear-gradient(rgba(40, 75, 125, 0.9), rgba(40, 75, 125, 0.9)),  */
-    linear-gradient(rgba(65, 68, 74, 0.92), rgba(65, 68, 74, 0.92)),
-    url("images/devicons.png");
+    color: #f3f3f3;
 }
 
 .about {
+    border-top: #f3f3f3 1px solid;
     text-align: left;
     margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 14px;
 }
 
@@ -35,33 +29,16 @@ footer {
     font-size: 14px;
 }
 
-.overlay {  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 2;
-    opacity: 0;
-    /* background-color: rgb(40, 75, 125); */
-    background-color: rgba(65, 68, 74, 0.95);
-    transition: opacity 200ms ease-in-out;
-  }
-  
-.overlay:hover {
-      opacity: 0.95;
-    }
-
 .light-text {
-    color:#f2f5f8;
+    color: #f3f3f3;
 }
 
-.link {
-    color: #647FA8
+.light-underline {
+    padding-bottom: 5px;
 }
 
-.mobile-scroll {
-    color: #062148;
-    margin: 0 100px
+.portfolio-image {
+    width: 330px;
 }
 
 .profile-image {
@@ -74,49 +51,33 @@ footer {
     margin: 10px;
     padding: 0px 20px;
     text-align: center;
+    color: #f3f3f3;
 }
 
-.title {
-    color: rgb(65, 68, 74);
-    font-size: 40px;
-    text-align: center;
+#title {
+    text-align: left;
+    padding: 20px 0 0 30px;
 }
-/* 65, 68, 74 */
-/* 40, 75, 125 */
+
+#portfolio {
+    display: block;
+}
+
+#WTPA {
+    display: none;
+    margin: 50px 0 0 30px;
+    padding-bottom: 500px;
+}
+
 #sidebar {
     margin-left: 0;
-    background-color: rgb(65, 68, 74)
-    ;
-    /* color: #5976A2; */
-    /* background-image: 
-        linear-gradient(rgba(40, 75, 125, 0.9), rgba(40, 75, 125, 0.9)),
-        linear-gradient(rgba(65, 68, 74, 0.92), rgba(65, 68, 74, 0.92)),
-        url("images/devicons.png"); */
+    background-color: #171717;
     text-align: center;
     min-width: 280px;
 }
 
-/* 
-  #5976A2
-  #819CA7
-  #38383A
-  #2E2F33
-
-  complements:
-  #22333B
-  #F2F4F3
-
-  C5D5EA
-  B3C5D7
-  D8E1E9
-  */
-
-
 @media only screen and (min-width: 576px) {
-    footer {
-        visibility: hidden;
-        margin: -2000px;
-    }
+
     .about {
         max-width: 200px;
         margin: 0;
@@ -126,9 +87,6 @@ footer {
         left: 0;
         max-width: 280px;
         margin: 20px;
-    }
-    .mobile-scroll {
-        visibility: hidden;
     }
     .profile-image {
         margin: 0 20px 20px 20px;

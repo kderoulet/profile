@@ -1,21 +1,16 @@
 $(function() {    
 
-    var sizeTheOverlays = function() {
-        $(".overlay").resize().each(function() {
-        let h = $(".portfolio-image").outerHeight();
-        let w = $(".portfolio-image").outerWidth();
-        $(this).css("height", h);
-        $(this).css("width", w);
-      });
-    };
-    
-    sizeTheOverlays();
-    
-    var width = $(window).width();
-    $(window).resize(function(){
-       if($(this).width() != width){
-          width = $(this).width();
-          sizeTheOverlays();
-       }
-    });
+    $('#portfolio-to-WTPA').click(function() {
+        $('#portfolio').css("display", "block")
+        $('#WTPA').css("display", "none")
+    })
+
+    $('#WTPA-to-portfolio').click(function() {
+        $('#WTPA').css("display", "block")
+        $('#portfolio').css("display", "none")
+    })
+
+    function displayPortfolio() {
+        
+    }
 })
