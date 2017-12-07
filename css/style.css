@@ -63,6 +63,24 @@ a:hover {
     display: block;
 }
 
+#dragonfighter {
+    display: none;
+    margin: 50px 0 0 30px;
+    padding-bottom: 500px;
+}
+
+#ryde {
+    display: none;
+    margin: 50px 0 0 30px;
+    padding-bottom: 500px;
+}
+
+#solitaire {
+    display: none;
+    margin: 50px 0 0 30px;
+    padding-bottom: 500px;
+}
+
 #WTPA {
     display: none;
     margin: 50px 0 0 30px;
