@@ -69,6 +69,12 @@ a:hover {
     padding-bottom: 500px;
 }
 
+#reactchess {
+    display: none;
+    margin: 50px 0 0 30px;
+    padding-bottom: 500px;
+}
+
 #ryde {
     display: none;
     margin: 50px 0 0 30px;
